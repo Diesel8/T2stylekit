@@ -1,0 +1,32 @@
+=font-face($family, $path, $svg, $weight: normal, $style: normal)
+  @font-face
+    font-family: $family
+    src: url('#{$path}.eot')
+    src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg##{$svg}') format('svg')
+    font-weight: $weight
+    font-style: $style
+
+
+=font-face-otf($family, $path, $svg, $weight: normal, $style: normal)
+  @font-face-otf
+    font-family: $family
+    src: url('#{$path}.otf')
+    font-weight: $weight
+    font-style: $style
+
+
++font-face('Terminal2', 'fonts/Terminal2', 'Terminal2')
++font-face-otf('Aileron', 'fonts/Aileron-Regular', 'Aileron-Regular')
+
+$color-primary: #004b63
+$color-secondary: #4f5d75
+$color-silver: #bfc0c0
+$color-ochre: #ef8354
+$color-text: #0D0D0D
+
+body
+    color: $color-text
+    font-family: Aileron
+
+.header
+    font-family: Terminal2

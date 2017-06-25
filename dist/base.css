@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Terminal2";
+  src: url(/fonts/Terminal2.eot?e0355440e095f1b2d6bdc32895c1d751);
+  src: url(/fonts/Terminal2.eot?e0355440e095f1b2d6bdc32895c1d751?#iefix) format("embedded-opentype"), url(/fonts/Terminal2.woff?f1a5ce603c03fb2471819d3d33ad92fa) format("woff"), url(/fonts/Terminal2.ttf?44d00070117e9fe3e0b311fd818abe92) format("truetype"), url(/fonts/Terminal2.svg?8c57f6e48055fabef3c2978f5ed30ce2#Terminal2) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face-otf {
+  font-family: "Aileron";
+  src: url(/fonts/Aileron-Regular.otf?ecf66f2e4c182ee2dfcca90357a9aef9);
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: #0D0D0D;
+  font-family: Aileron;
+}
+
+.header {
+  font-family: Terminal2;
+}
