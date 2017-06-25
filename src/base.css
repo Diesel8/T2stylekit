@@ -1,0 +1,34 @@
+/*
+Error: The line was indented 2 levels deeper than the previous line.
+        on line 35 of C:\Users\User\Documents\GitHub\stylekit\src\base.sass
+
+30:   body
+31: 
+32: 
+33: 
+34: body
+35:     color: $color-text
+36:     font-family: Aileron
+37:     margin: 0
+38:     padding: 0
+39: 
+40: .header
+
+Backtrace:
+C:\Users\User\Documents\GitHub\stylekit\src\base.sass:35
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:520:in `tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:409:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:18:in `load'
+C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: The line was indented 2 levels deeper than the previous line.\A         on line 35 of C:\Users\User\Documents\GitHub\stylekit\src\base.sass\A \A 30:   body\A 31: \A 32: \A 33: \A 34: body\A 35:     color: $color-text\A 36:     font-family: Aileron\A 37:     margin: 0\A 38:     padding: 0\A 39: \A 40: .header"; }

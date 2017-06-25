@@ -1,21 +1,20 @@
 =font-face($family, $path, $svg, $weight: normal, $style: normal)
   @font-face
     font-family: $family
-    src: url('#{$path}.eot')
-    src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg##{$svg}') format('svg')
+    src: url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg##{$svg}') format('svg')
     font-weight: $weight
     font-style: $style
 
 
 =font-face-otf($family, $path, $svg, $weight: normal, $style: normal)
-  @font-face-otf
+  @font-face
     font-family: $family
     src: url('#{$path}.otf')
     font-weight: $weight
     font-style: $style
 
 
-+font-face('Terminal2', 'fonts/Terminal2', 'Terminal2')
++font-face('Terminal2', 'fonts/Terminal2', 'Terminal2.svg')
 +font-face-otf('Aileron', 'fonts/Aileron-Regular', 'Aileron-Regular')
 
 $color-primary: #004b63
@@ -23,10 +22,113 @@ $color-secondary: #4f5d75
 $color-silver: #bfc0c0
 $color-ochre: #ef8354
 $color-text: #0D0D0D
+$color-success-dark: #43915f
+$color-success-light: #5dab79
+$color-info-dark: #3faed9
+$color-info-light: #59c8f3
+$color-warning-dark: #f0ad41
+$color-warning-light: #ffc75b
+$color-danger-dark: #b72222
+$color-danger-light: #d13c3c
+
+$width-name: max-width;
+$target-width: 320px;
+
+@media screen and ($width-name : $target-width) 
+  body
+
+
 
 body
     color: $color-text
     font-family: Aileron
+    margin: 0
+    padding: 0
 
 .header
     font-family: Terminal2
+    margin-top: auto
+    margin-bottom: auto
+    margin-left: 10%
+    font-size: 2em
+
+
+.title
+    font-size: 28pt
+    font-weight: 700
+    color: $color-primary
+    line-height: 1.1
+
+h1
+    @extend .title
+    font-size: 16pt
+
+h2
+    @extend .title
+    font-size: 13pt
+    color: $color-secondary
+
+.top
+    height: 55px
+    background-color: $color-primary
+    color: white
+    width: 100%
+    display: flex
+
+.main
+    margin-bottom: 55px;
+
+.registration-form
+    color: $color-text
+    font-family: Aileron
+
+.registration-form
+    width: 90%
+    max-width: 500px
+    margin-left: auto
+    margin-right: auto
+    margin-top: 25px
+
+.login-form
+    @extend .registration-form
+
+.btn-submit
+    background-color: $color-info-light
+    color: white
+    &:hover
+        background-color: $color-info-dark
+        color: white
+    &:focus
+        background-color: $color-info-light
+        color: white
+
+.btn-reset
+    background-color: $color-danger-light
+    color: white
+    &:hover
+        background-color: $color-danger-dark
+        color: white
+    &:focus
+        background-color: $color-danger-light
+        color: white
+
+.btn-warning
+    background-color: $color-warning-light
+    color: white
+    &:hover
+        background-color: $color-warning-dark
+        color: white
+    &:focus
+        background-color: $color-warning-light
+        color: white
+
+.footer
+    height: 50px
+    width: 100%
+    background-color: $color-silver
+    display: flex
+    .container
+        margin: auto auto
+        text-align: center
+        .text-muted
+            margin: auto auto
