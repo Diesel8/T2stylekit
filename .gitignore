@@ -1,2 +1,4 @@
 .sass-cache/
 *.css.map
+mix-manifest.json
+node_modules
