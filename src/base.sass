@@ -45,12 +45,29 @@ body
     margin: 0
     padding: 0
 
+a
+    color: $color-ochre
+    &:hover
+        color: $color-ochre
+    &:focus
+        color: $color-ochre
+    &:active
+        color: $color-ochre
+
 .header
     font-family: Terminal2
     margin-top: auto
     margin-bottom: auto
-    margin-left: 10%
+    margin-left: 15%
     font-size: 2em
+    a
+        color: white
+        &:hover
+            text-decoration: none
+        &:active
+            text-decoration: none
+        &:focus
+            text-decoration: none
 
 
 .title
@@ -83,10 +100,10 @@ h2
     font-family: Aileron
 
 .registration-form
-    width: 90%
+    //width: 90%
     max-width: 500px
-    margin-left: auto
-    margin-right: auto
+    margin-left: 15%
+    //margin-right: auto
     margin-top: 25px
 
 .login-form
@@ -132,4 +149,21 @@ h2
         text-align: center
         .text-muted
             margin: auto auto
-            color: $color-silver
+            color: $color-secondary
+
+.btn
+    //background-color: #f0f0f0
+    background-color: $color-ochre
+    color: white
+    &:hover
+        background-color: $color-primary
+        color: white
+    //&:focus
+       // background-color: $color-primary
+
+.dobForm
+    padding-right: 0px
+    padding-left: 5px
+    
+.dobRow
+    padding-left: 10px

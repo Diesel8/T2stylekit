@@ -19,12 +19,44 @@ body {
   padding: 0;
 }
 
+a {
+  color: #ef8354;
+}
+
+a:hover {
+  color: #ef8354;
+}
+
+a:focus {
+  color: #ef8354;
+}
+
+a:active {
+  color: #ef8354;
+}
+
 .header {
   font-family: Terminal2;
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: 10%;
+  margin-left: 15%;
   font-size: 2em;
+}
+
+.header a {
+  color: white;
+}
+
+.header a:hover {
+  text-decoration: none;
+}
+
+.header a:active {
+  text-decoration: none;
+}
+
+.header a:focus {
+  text-decoration: none;
 }
 
 .title,
@@ -67,10 +99,8 @@ h2 {
 
 .registration-form,
 .login-form {
-  width: 90%;
   max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 15%;
   margin-top: 25px;
 }
 
@@ -135,6 +165,25 @@ h2 {
 
 .footer .container .text-muted {
   margin: auto auto;
-  color: #bfc0c0;
+  color: #4f5d75;
+}
+
+.btn {
+  background-color: #ef8354;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #004b63;
+  color: white;
+}
+
+.dobForm {
+  padding-right: 0px;
+  padding-left: 5px;
+}
+
+.dobRow {
+  padding-left: 10px;
 }
 
